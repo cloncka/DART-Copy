@@ -1,0 +1,113 @@
+
+For these, I'll provide algorithms in case we change our mind about the language, but I'll also provide a rough outline of the code in JavaScript if we decide to go with it. 
+
+
+
+### Graph over time:
+//if we use javascript, then I can use chart.js for the chart. 
+
+this function would have 2 parts
+
+#### creating xy pairs
+do the following:
+create a second array to go with the array of data. the size of this array should be the same as the size of the data array. It should just be populated with incrementing integers from 1 to the array's size.  The incrementing array will be the x values, and the data array will be the y values
+
+entries = [data.length];
+
+if (entries.length = 0){
+	return no data available;
+}
+
+for (i = 0; i < entries.length; i++){
+    
+    entries[i] = i;
+}
+#### creating the actual chart
+
+The actual code for making a chart is different in different languages, so I can't provide an algorithm for making it. 
+
+Create a chart with the following code:
+//rgb == red, green, blue values
+new Chart("datachart"),{
+	type: "line"
+	data: {
+		labels: incrementing array //this gives the values of the x-axis
+		datasets:
+			backgroundColor:(give the color of the points in rgb terms)
+			bordorColor:(give the color of the lines in rgb terms)
+			data:(array of mg/Dl values) //this gives y-values, it automatically creates the y axis values
+			}
+	
+	}
+
+
+}
+
+
+
+### Slope of Last 3 points:
+//The distance between all points is the same, so we don't need to worry about the run.
+//however, the distance between the 3rd most recent and most recent is twice that of any other //point pair. 
+//To find the slope for 2 points, take the later point minus the earlier point. 
+
+take the last 3 elements of the array, store them in 
+3rd last, 2nd last, and latest.
+
+take 2nd last minus 3rd last, store the result.
+take latest last minus 2nd last, store the result.
+take latest minus 3rd last Divided by 2 (since these entries are two apart), store the result. 
+
+add all 3 results together and divide them by 3 to average them, then return the sign of the answer. 
+
+
+if(data.length < 3){
+	return not enough data to give slope
+
+}
+
+last = data.length-1
+
+int third = data[last-2]
+int second = data[last-1]
+int final = data[last]
+
+float x = second - third
+float y = first - second
+float z = (first - third)/2
+
+float response = (x+y+z)/3
+
+if (response > 0){
+	return positive slope
+}else if respone < 0{
+	reaturn negative slope
+}else{
+
+	return neutral slope
+}
+
+
+
+### Warnings:
+//These should the easiest to implement
+
+if (array.length < 1) {
+	return no data is available
+
+}
+
+
+If array[last_element] > 180:
+	give warning for high mg/Dl
+if array[last_element] < 70:
+	give warning for low mg/DLl
+
+
+int last = data.length-1;
+
+if(data[last] > 180){
+  //  give warning for high mg/Dl
+    
+}else if data[last] < 70{
+   // give warning for low mg/DLl
+}

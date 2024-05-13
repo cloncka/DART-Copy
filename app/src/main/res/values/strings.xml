@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- scnhomepage strings -->
+
+    <string name="app_name">DART</string>
+
+
+    <!-- Home Page -->
+    <string name="homepage_settings_content_description">Settings Button</string>
+    <string name="homepage_patient_data_content_description">Patient Data Button</string>
+    <string name="homepage_village_data_content_description">Village Data Button</string>
+    <string name="homepage_education_content_description">Education Button</string>
+    <string name="homepage_faq_content_description">FAQ Button</string>
+    <string name="homepage_home_icon_content_description">Home Icon</string>
+    <string name="title_activity_file_test">FileTestActivity</string>
+    <string name="edit_patient_data_activity">EditPatientDataActivity</string>
+    <string name="new_data_entry_activity">NewDataEntryActivity</string>
+    <string name="new_glucose_entry_activity">NewGlucoseEntry</string>
+
+
+	  <string name="new_data_entry_date_hint">Enter Date</string>
+	  <string name="new_data_entry_glucose_hint">Enter Glucose</string>
+	  <string name="new_data_entry_note_hint">Enter Note</string>
+	  <string name="new_data_entry_back_button_description">Back Button</string>
+    homepage_home_icon_content_description
+
+
+    <!-- Strings used for fragments for navigation -->
+    homepage_home_icon_content_description
+</resources>

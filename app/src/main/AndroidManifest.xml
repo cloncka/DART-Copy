@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+package="com.bradley.dart" >
+    <uses-permission android:name="android.permission.INTERNET" />
+<application
+    android:allowBackup="true"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme"
+    android:name=".DartApplication">
+    <activity
+        android:name=".SendEmailActivity"
+        android:exported="false" />
+    <activity
+        android:name=".FileTestActivity"
+        android:exported="false"
+        android:label="@string/title_activity_file_test"
+        android:theme="@style/AppTheme" />
+    <activity
+        android:name=".EditPatientDataActivity"
+        android:exported="false"
+        android:label="@string/edit_patient_data_activity"
+        android:theme="@style/AppTheme" />
+    <activity
+        android:name=".NewDataEntryActivity"
+        android:exported="false"
+        android:label="@string/new_data_entry_activity"
+        android:theme="@style/AppTheme" />
+    <activity
+        android:name=".NewGlucoseEntry"
+        android:exported="false"
+        android:label="@string/new_glucose_entry_activity"
+        android:theme="@style/AppTheme" />
+    <activity
+        android:name=".HelpPage"
+        android:exported="false"
+        android:label="@string/new_glucose_entry_activity"
+        android:theme="@style/AppTheme" />
+    <activity
+        android:name=".HomePageActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:exported="true"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+  
+  	<activity
+			android:name=".PatientDashboard"
+			android:configChanges="orientation|keyboardHidden|screenSize">
+		</activity>
+
+    <activity
+        android:name=".AllEntries"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+    </activity>
+
+    <activity
+
+        android:name=".NewVillageEntry"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+    </activity>
+
+  <activity
+        android:name=".ExportPatientDashboard"
+        android:exported="false"
+        android:label="@string/new_data_entry_activity"
+        android:theme="@style/AppTheme" />
+
+    <activity
+        android:name=".PatientEntryList"
+        android:exported="false"
+        android:label="@string/new_data_entry_activity"
+        android:theme="@style/AppTheme" />
+
+    <activity
+        android:name=".LessonSelection"
+        android:exported="false"
+        android:label="@string/new_data_entry_activity"
+        android:theme="@style/AppTheme" />
+
+    <activity
+        android:name=".LessonBloodSugarSelect"
+        android:exported="false"
+        android:label="@string/new_data_entry_activity"
+        android:theme="@style/AppTheme" />
+
+    <activity
+        android:name=".LessonLowSugarSelect"
+        android:exported="false"
+        android:label="@string/new_data_entry_activity"
+        android:theme="@style/AppTheme" />
+
+    <activity
+        android:name=".LessonHighSugarSelect"
+        android:exported="false"
+        android:label="@string/new_data_entry_activity"
+        android:theme="@style/AppTheme" />
+
+    <activity
+        android:name=".LessonFoodchoice"
+        android:exported="false"
+        android:label="@string/new_data_entry_activity"
+        android:theme="@style/AppTheme" />
+
+    <activity
+        android:name=".Lessonsleep"
+        android:exported="false"
+        android:label="@string/new_data_entry_activity"
+        android:theme="@style/AppTheme" />
+
+
+
+</application>
+
+
+</manifest>
